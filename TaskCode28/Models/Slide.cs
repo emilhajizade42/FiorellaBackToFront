@@ -9,6 +9,6 @@ namespace TaskCode28.Models
     {
         public int Id { get; set; }
 
-        public int Url { get; set; }
+        public string Url { get; set; }
     }
 }
