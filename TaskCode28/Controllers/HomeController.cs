@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using TaskCode28.DAL;
 using TaskCode28.Models;
+using TaskCode28.ViewModels;
 
 namespace TaskCode28.Controllers
 {
@@ -17,8 +18,13 @@ namespace TaskCode28.Controllers
         }
         public IActionResult Index()
         {
-            List<Slide> Slides = _context.Slides.ToList();
-            return View(Slides);
+
+            HomeViewModel home = new HomeViewModel
+            {
+                slides = _context.Slides.ToList(),
+                summary = _context.Summary.FirstOrDefault()
+            };
+            return View(home);
         }
     }
 }

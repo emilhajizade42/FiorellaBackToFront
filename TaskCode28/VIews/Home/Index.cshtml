@@ -1,6 +1,7 @@
 ﻿
 @using TaskCode28.Models
-@model List<Slide>
+@using TaskCode28.ViewModels
+@model HomeViewModel
 @{
     ViewData["Title"] = "Index";
 }
@@ -13,6 +14,10 @@
 
     <section id="slider">
         <div class="owl-carousel slider">
+            @foreach (var slide in Model.slides)
+            {
+                <div> <img src="~/img/@slide.Url" alt=""> </div>
+            }
             <div> <img src="~/img/h3-slider-background.jpg" alt=""> </div>
             <div> <img src="~/img/h3-slider-background-2.jpg" alt=""> </div>
             <div> <img src="~/img/h3-slider-background-3.jpg" alt=""> </div>
@@ -21,15 +26,15 @@
             <div class="row">
                 <div class="col-lg-5">
                     <div class="text">
-                        <h1>Send <span>flowers</span> like</h1>
-                        <h1>you mean it</h1>
+                        @Html.Raw(Model.summary.Title)
+                         
+      
                         <p class="text-black-50 d-none d-sm-block">
-                            Where flowers are our inspiration to create lasting memories. Whatever the occasion, our flowers will
-                            make it special cursus a sit amet mauris.
+                           @Model.summary.Description
                         </p>
                     </div>
                     <div class="img">
-                        <img src="~/img/h2-sign-img.png" alt="">
+                        <img src="~/img/@Model.summary.ImageUrl" alt="">
                     </div>
                 </div>
             </div>

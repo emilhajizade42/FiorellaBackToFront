@@ -13,5 +13,6 @@ namespace TaskCode28.DAL
         {
         }
         public DbSet<Slide> Slides { get; set; }
+        public DbSet<Summary> Summary { get; set; }
     }
 }

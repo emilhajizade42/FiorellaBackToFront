@@ -30,7 +30,7 @@ namespace TaskCode28
             services.AddControllersWithViews();
             services.AddDbContext<AppDbContext>(options =>
                 options.UseSqlServer(_config["ConnectionStrings:DefaultConnection"]));
-            services.AddMvc();
+         
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
