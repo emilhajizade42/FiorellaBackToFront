@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "E+jJIITI6kzrSqjm4dCHADNistdD6OwcJXehoT/zrwuCGdgdsQqnWY+UwokgB2xsb50yYKTz3muOkOzDtol4Hg==",
+  "dgSpecHash": "ZV06giSBqQC9xvnxn6VyjWBnQe8SzUg9omqxCz/F56Pq5KaVg1nhdnX4Wy+eGRfzyLgZDYa6ByO/5j73gbuN/g==",
   "success": true,
   "projectFilePath": "C:\\Users\\acer\\Desktop\\FiorellaBackToFront\\TaskCode28\\TaskCode28.csproj",
   "expectedPackageFiles": [
@@ -165,7 +165,8 @@
     "C:\\Users\\acer\\.nuget\\packages\\system.xml.readerwriter\\4.3.0\\system.xml.readerwriter.4.3.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.xml.xdocument\\4.3.0\\system.xml.xdocument.4.3.0.nupkg.sha512",
     "C:\\Users\\acer\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512",
-    "C:\\Users\\acer\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512"
+    "C:\\Users\\acer\\.nuget\\packages\\system.xml.xmlserializer\\4.3.0\\system.xml.xmlserializer.4.3.0.nupkg.sha512",
+    "C:\\Users\\acer\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\3.1.25\\microsoft.netcore.app.host.win-x64.3.1.25.nupkg.sha512"
   ],
   "logs": []
 }

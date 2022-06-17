@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -21,8 +22,12 @@ namespace TaskCode28.Controllers
 
             HomeViewModel home = new HomeViewModel
             {
-                slides = _context.Slides.ToList(),
-                summary = _context.Summary.FirstOrDefault()
+                Slides = _context.Slides.ToList(),
+                Summary = _context.Summary.FirstOrDefault(),
+                Categorys = _context.Categories.Where(x=>!x.IsDeleted).ToList(),
+                Products = _context.Products.Where(x => !x.IsDeleted).Include(x=>x.Category).Include(x=>x.Images).ToList(),
+                ProductImages =  _context.ProductImages.Where(x => !x.IsDeleted).ToList(),
+
             };
             return View(home);
         }
